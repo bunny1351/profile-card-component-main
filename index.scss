@@ -1,0 +1,126 @@
+@import 'variables.scss';
+
+body{
+    background-color: $darkCyan;
+    font-family: $mainFont;
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+}
+    main{
+        width: 80vw;
+        max-width: 300px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 15vh auto;
+        background: #fff;
+
+        .allstats{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            text-align: center;
+            margin: 15px 10px;
+
+            .stats{
+
+                p{
+                    color: $darkGrayishBlue;
+                    font-size: 13px;
+                }
+
+                h4{
+                    margin-bottom: -10px;
+                    color: $veryDarkDesatBlue;
+                }
+            }
+        }
+
+        .intro{
+            margin-top: 60px;
+            text-align: center;
+            color: $darkGrayishBlue;
+
+            span{
+                color: $veryDarkDesatBlue;
+                font-weight: bold;
+                font-size: $fontSize;
+            }
+
+            #london{
+                font-size: 15px;
+                margin-top: -10px;
+                margin-bottom: 20px;
+            }
+        }
+
+        hr{
+            opacity: 0.5;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        #guy{
+            border: 3px solid #fff;
+            border-radius: 50px;
+            z-index: 1;
+            position: absolute;
+            top: 30%;
+            left: 35%;
+        }
+    }
+
+    @media  screen and (min-width: 321px) and (max-width: 375px) {
+        #guy{
+            border: 3px solid #fff;
+            border-radius: 50px;
+            z-index: 1;
+            position: absolute;
+            top: 30%;
+            left: 37%;
+        }
+    }
+
+    @media  screen and (min-width: 376px) and (max-width: 425px) {
+        #guy{
+            border: 3px solid #fff;
+            border-radius: 50px;
+            z-index: 1;
+            position: absolute;
+            top: 30%;
+            left: 39%;
+        }
+    }
+
+    @media screen and (min-width: 426px) and (max-width: 768px) {
+        #guy{
+            border: 3px solid #fff;
+            border-radius: 50px;
+            z-index: 1;
+            position: absolute;
+            top: 26%;
+            left: 43.5%;
+        }
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        #guy{
+            border: 3px solid #fff;
+            border-radius: 50px;
+            z-index: 1;
+            position: absolute;
+            top: 25.5%;
+            left: 45%;
+        }
+    }
+
+    @media screen and (min-width: 1025px) and (max-width: 1440px) {
+        #guy{
+            border: 3px solid #fff;
+            border-radius: 50px;
+            z-index: 1;
+            position: absolute;
+            top: 22%;
+            left: 47%;
+        }
+    }
